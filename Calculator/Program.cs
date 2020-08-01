@@ -20,7 +20,7 @@ namespace Calculator
             Console.WriteLine("If I multiply these numbers together, my final answer is:");
             Console.WriteLine(finalproduct);
 
-            //Squares assignment
+            //Squares assignment if use number use Math.Sqrt(3)
             Console.WriteLine("Enter a comma separated numbers to square");
             var squareanswer = Console.ReadLine();
             string [] squareproduct = squareanswer.Split(",");
@@ -31,7 +31,7 @@ namespace Calculator
               squareofproduct += int.Parse(sqproduct) * int.Parse(sqproduct) + ",";
             }
             squareofproduct = squareofproduct.TrimEnd(',');
-            Console.WriteLine("If I square the list of numbers, my final answer is:");
+            Console.WriteLine("If I square the list of numbers entered, my final answer is:");
             Console.WriteLine(squareofproduct);
         }
     }

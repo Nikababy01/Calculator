@@ -21,6 +21,18 @@ namespace Calculator
             Console.WriteLine(finalproduct);
 
             //Squares assignment
+            Console.WriteLine("Enter a comma separated numbers to square");
+            var squareanswer = Console.ReadLine();
+            string [] squareproduct = squareanswer.Split(",");
+            string squareofproduct = "";
+             
+            foreach (var sqproduct in squareproduct)
+            {
+              squareofproduct += int.Parse(sqproduct) * int.Parse(sqproduct) + ",";
+            }
+            squareofproduct = squareofproduct.TrimEnd(',');
+            Console.WriteLine("If I square the list of numbers, my final answer is:");
+            Console.WriteLine(squareofproduct);
         }
     }
 }
